@@ -9,9 +9,9 @@ st.set_page_config(page_title='Prediction of Disease Outbreaks',
                    page_icon="🧑‍⚕️")
 
 # Load pre-trained models
-diabetes_model = pickle.load(open(r"diabetes_model.sav", 'rb'))
-heart_disease_model = pickle.load(open(r"heart_model.sav", 'rb'))
-parkinsons_model = pickle.load(open(r"parkinson_model.sav", 'rb'))
+diabetes_model = pickle.load(open(os.path.join(BASE_DIR, "diabetes_model.sav"), 'rb'))
+heart_disease_model = pickle.load(open(os.path.join(BASE_DIR, "heart_model.sav"), 'rb'))
+parkinsons_model = pickle.load(open(os.path.join(BASE_DIR, "parkinson_model.sav"), 'rb'))
 
 # Sidebar navigation
 with st.sidebar:
