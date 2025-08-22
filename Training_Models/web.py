@@ -2,6 +2,7 @@ import os
 import pickle  # pre-trained model loading
 import streamlit as st  # web app
 from streamlit_option_menu import option_menu
+BASE_DIR = os.path.dirname(__file__)
 
 # Set the page configuration
 st.set_page_config(page_title='Prediction of Disease Outbreaks',
